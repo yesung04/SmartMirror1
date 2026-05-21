@@ -139,7 +139,7 @@ void MainWindow::readPendingDatagrams() {
                 int alpha = ((200 - briVal) * 180) / 200;
 
                 overlayWidget->setStyleSheet(
-                        QString("background-color: rgba(255,255,255,%1);")
+                        QString("background-color: rgba(0,0,0,%1);")
                             .arg(alpha));
             }
             else if(briVal>=201&&briVal<=350){
@@ -153,7 +153,7 @@ void MainWindow::readPendingDatagrams() {
                 alpha = qBound(0, alpha, 180);
 
                 overlayWidget->setStyleSheet(
-                        QString("background-color: rgba(0,0,0,%1);")
+                        QString("background-color: rgba(255,255,255,%1);")
                             .arg(alpha));
             }
         }
